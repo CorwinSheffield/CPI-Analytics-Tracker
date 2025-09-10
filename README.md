@@ -6,7 +6,8 @@ This is a Spring Boot project I made to fetch, analyze, and persist various sect
 - Scheduled, parallelized ingestion of CPI data from the BLS API
 - Keeps track of fetched data to avoid duplication
 - Error and success logging of automated job, as well as retries for the automated process
-- REST endpoints that support manual data fetching, analytics, and a full-text search of the PostGreSQL database of sectors that serves analytics on successful match like month-over-month, year-over-year, average, cumulative, and standard deviation for inflation
+- REST endpoints that support manual data fetching, analytics, and a full-text search of the PostGreSQL database
+- Provides metrics: month-over-month, year-over-year, average, cumulative, and standard deviation for inflation
 
 ## Stack
 - **Java + Spring Boot** for the service layer
@@ -16,7 +17,7 @@ This is a Spring Boot project I made to fetch, analyze, and persist various sect
 - **Maven** for build and execution
 
 ## Project Highlights
-- Asynchronous Ingesting using `Executor` framework and `CompletableFuture`
+- Asynchronous ingestion using `Executor` framework and `CompletableFuture`
 - Reactive Endpoints for large sets of data
 - Layered Architecture with clear separation of concerns
 - Transactional Persistence for data integrity
