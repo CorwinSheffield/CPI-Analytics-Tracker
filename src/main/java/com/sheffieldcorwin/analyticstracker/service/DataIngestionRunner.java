@@ -61,9 +61,7 @@ public class DataIngestionRunner {
 				return new SaveResult(sector.getSeriesId(), 0);
 			}
 		}, executor)).toList();
-		
 		futures.forEach(t -> t.thenAccept(t1 -> log.info("Fetched {}: {} records saved", t1.sectorName(), t1.recordsSaved())));
-	
 	}
 
 	private void logFetch(String seriesId, boolean success, String message) {

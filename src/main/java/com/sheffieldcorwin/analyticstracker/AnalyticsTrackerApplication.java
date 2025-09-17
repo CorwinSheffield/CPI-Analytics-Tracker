@@ -12,8 +12,4 @@ public class AnalyticsTrackerApplication {
 		SpringApplication.run(AnalyticsTrackerApplication.class, args);
 	}
 
-	
-
-	
-
 }

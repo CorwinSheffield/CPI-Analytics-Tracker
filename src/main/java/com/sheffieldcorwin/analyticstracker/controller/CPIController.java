@@ -36,7 +36,6 @@ public class CPIController {
 	
 	@GetMapping("/fetch")
 	public SaveResult fetchData(@RequestParam String seriesId) {
-
 		SaveResult result = cpiService.fetchSingleSeries(seriesId);
 		return result;
 	}
